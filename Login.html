@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FocusApp - Comunidad Fotográfica</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/focusapp.css" />
   
 </head>
 
@@ -25,7 +25,7 @@
           <li><a href="subir.html">Subir Foto</a></li>
           <li><a href="#ranking">Ranking</a></li>
           <li><a href="concursos.html">Concursos</a></li>
-          <li><a href="edit/login.html">Ingresar</a></li>
+          <li><a href="edit./login.html">Ingresar</a></li>
         </ul>
       </nav>
       <div class="menu-icon" id="menu-btn">
@@ -36,8 +36,37 @@
 
   <!-- Home -->
   <section class="home cover" id="home">
-    <img src="/imagenes/home-img.jpg" class="wave" alt="FocusApp portada" />
+    <img src="/imagenes/foto1.jpg" class="wave" alt="FocusApp portada" />
   </section>
+
+ <section class="categories" id="categorias">
+  <h1 class="heading">Categorías <span>Populares</span></h1>
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">‹</button>
+
+    <div class="box-container" id="carousel">
+      <div class="box">
+        <img src="/imagenes/retrato.jpg" alt="Retratos" />
+        <h3>Retratos</h3>
+      </div>
+      <div class="box">
+        <img src="/imagenes/naturaleza.jpg" alt="Naturaleza" />
+        <h3>Naturaleza</h3>
+      </div>
+      <div class="box">
+        <img src="/imagenes/urbano.webp" alt="Urbano" />
+        <h3>Urbano</h3>
+      </div>
+      <div class="box">
+        <img src="/imagenes/arte-conceptual.jpg" alt="Arte Conceptual" />
+        <h3>Arte Conceptual</h3>
+      </div>
+    </div>
+
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">›</button>
+  </div>
+</section>
+
 
   <!-- Sobre Nosotros -->
   <section class="about" id="about">
@@ -134,3 +163,15 @@
 
     </div>
   </section>
+
+  <script>
+  function scrollCarousel(direction) {
+    const carousel = document.getElementById('carousel');
+    const scrollAmount = 300; // píxeles a desplazar
+    carousel.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
