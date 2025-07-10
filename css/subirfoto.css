@@ -1,0 +1,124 @@
+/* Variables de colores */
+:root {
+  --color-primario: #176AB9;
+  --color-secundario: #75B4DB;
+  --color-fondo-claro: #C4DCEC;
+  --color-fondo-oscuro: #241C24;
+  --color-navbar: #75B4DB;
+  --color-acento: #5D80B5;
+  --color-adefinir:#374472;
+}
+
+
+/* General */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-fondo-claro);
+  color: var(--color-fondo-oscuro);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-fondo-oscuro);
+}
+
+.header {
+  background-color: var(--color-navbar);
+  padding: 1rem 0;
+  color: white;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.logo-text {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Botón */
+.btn {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-secundario);
+}
+
+/* Sección de Subida */
+.about {
+  background-color: white;
+  padding: 3rem 1rem;
+}
+
+.about .heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-fondo-oscuro);
+}
+
+.about .heading span {
+  color: var(--color-primario);
+}
+
+.about .container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-fondo-claro);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about input[type="text"],
+.about input[type="file"],
+.about input[type="radio"],
+.about select {
+  padding: 0.8rem;
+  border: 1px solid var(--color-acento);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.about select {
+  cursor: pointer;
+}
+
+.about label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: var(--color-fondo-oscuro);
+}
+
+.about input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.about button.btn {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
