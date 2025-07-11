@@ -111,3 +111,20 @@ form button[type="submit"]:hover {
 .login-link a:hover {
   text-decoration: underline;
 }
+/* Estilo para el botón continuar */
+button {
+  background-color: #176AB9; /* Azul de fondo */
+  color: white; /* Texto blanco */
+  padding: 12px 24px; /* Espaciado dentro del botón */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Fuente en negrita */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el botón */
+  width: 100%; /* Ancho completo (opcional si quieres que ocupe todo el ancho) */
+  transition: background-color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+button:hover {
+  background-color: #0d76b8; /* Azul más claro cuando se pasa el cursor */
+}
