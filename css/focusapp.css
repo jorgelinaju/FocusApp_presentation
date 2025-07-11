@@ -248,3 +248,18 @@ a {
 .carousel-btn.right {
   right: 0.5rem;
 }
+/* Estilo para el botón */
+button {
+  background-color: #176AB9; /* Azul de fondo */
+  color: white; /* Texto blanco */
+  padding: 12px 24px; /* Espaciado dentro del botón */
+  font-size: 1rem; /* Tamaño de la fuente */
+  font-weight: bold; /* Fuente en negrita */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el botón */
+  width: 20%; /* Ancho completo (opcional si quieres que ocupe todo el ancho) */
+  height: 50px; /* Altura del botón */
+  transition: background-color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
