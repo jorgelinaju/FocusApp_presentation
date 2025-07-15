@@ -266,3 +266,74 @@ a {
 .carousel-btn.right:hover {
   background-color: var(--color-secundario); /* Cambia el color al pasar el cursor */
 }
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #f0f8ff;
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #176AB9;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+  color: white !important;
+}
+
+.upload-btn:hover {
+  background-color: #176AB9;
+
+}
+
+.upload-status {
+  position: relative;
+  height: 40px;
+}
+
+/* Base para ambos mensajes */
+.loading,
+.success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease;
+}
+
+/* Mostrar "subiendo..." al hacer clic */
+#upload-check:checked ~ .upload-status .loading {
+  opacity: 1;
+  visibility: visible;
+  animation: fadeOut 4s forwards;
+}
+
+/* Mostrar "subido" después */
+#upload-check:checked ~ .upload-status .success {
+  animation: fadeIn 0.5s 2s forwards;
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+/* Animaciones */
+@keyframes fadeOut {
+  0%   { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; visibility: visible; }
+  100% { opacity: 1; visibility: visible; }
+}

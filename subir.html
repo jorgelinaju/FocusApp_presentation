@@ -41,7 +41,14 @@
         <input type="radio" name="votable" value="si" checked> Sí
         <input type="radio" name="votable" value="no"> No<br/><br/>
 
-        <button type="submit" class="btn">Subir</button><br><br>
+        <input type="checkbox" id="upload-check" hidden>
+        <label for="upload-check" class="upload-btn">Subir Foto</label>
+
+        <div class="upload-status">
+          <div class="loading"><span></span>Subiendo foto...<span></span></div>
+          <div class="success">✅ Foto subida exitosamente</div>
+        </div>
+        <br><br>
         <button type="button" onclick="window.location.href='loginok.html'" class="button">Continuar</button>
       </form>
     </div>
