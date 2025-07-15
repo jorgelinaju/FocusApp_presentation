@@ -1,4 +1,10 @@
 /* Sección Concursos */
+
+section.noticias {
+  padding: 40px 20px;
+  background-color: #e2f0fb;
+  overflow-x: hidden;
+}
 .noticias {
   padding: 4rem 1rem;
   background-color: var(--color-fondo-claro);
@@ -15,9 +21,16 @@
 }
 
 .swiper-container {
-  padding: 2rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
 }
 
+.swiper-slide {
+  box-sizing: border-box;
+  padding: 20px;
+}
 .swiper-slide.box {
   background-color: white;
   border: 1px solid var(--color-acento);
@@ -93,6 +106,13 @@
 }
 
 .swiper-pagination {
-  margin-top: 1.5rem;
+  position: absolute;
+  bottom: -30px; /* Más lejos del carrusel */
+  left: 0;
+  width: 100%;
   text-align: center;
+}
+.swiper-container {
+  position: relative; /* Necesario si usás position absolute en hijos */
+  padding-bottom: 60px; /* Dejá espacio para los puntitos */
 }
